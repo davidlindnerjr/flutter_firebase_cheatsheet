@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "147931611921",
+    "project_id": "fir-cheat-sheet",
+    "storage_bucket": "fir-cheat-sheet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147931611921:android:66740da2af8642009982b0",
+        "android_client_info": {
+          "package_name": "com.example.flutter_firebase_cheatsheet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147931611921-a2dvhb9bus5a7tvkakaph0rf4gb5jdt1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnTF-zJnpbskG9IjrHBwT-bFRJrfJ_8z0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147931611921-a2dvhb9bus5a7tvkakaph0rf4gb5jdt1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
