@@ -1,16 +1,44 @@
 # flutter_firebase_cheatsheet
 
-A new Flutter project.
+A quick setup guide in order to add Firebase backend such as Aunthentication, setup, and CRUD functionality into Flutter Projects.
 
-## Getting Started
+## Connect Flutter Project to Firebase
+- Install the CLI (only for initial setup)
 
-This project is a starting point for a Flutter application.
+`npm install -g firebase-tool`
 
-A few resources to get you started if this is your first Flutter project:
+`dart pub global activate flutterfire_cli`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Add environment varibale (only for initial setup)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+`export PATH="$PATH":"$HOME/.pub-cache/bin"`
+
+- Check version number
+
+`firebase --version`
+
+- Login to Firebase
+
+`firebase login`
+
+- Configure Project
+
+`flutterfire configure` -> choose existing project -> hit enter when prompted for project id -> Select platforms for project
+
+- Add Initalization in main function
+
+- Install Dependencies
+`flutter pub add firebase_core`
+
+```
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
+ }
+
+```
+
+
